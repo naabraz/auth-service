@@ -1,9 +1,7 @@
-import { Router } from 'express'
+import { Router } from 'express';
 
-const router = Router()
+const router = Router();
 
-router.post('/login', (_, res) => {
-  res.status(200).send({ logged: true });
-})
+router.post('/login', (_, res) => res.status(200).send({ logged: true }));
 
 export default router;
